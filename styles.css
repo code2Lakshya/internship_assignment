@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --text:#15143966;
+    --text2:#1E0E62;
+    --btn:#25DAC5;
+}
+html{
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text2);
+}
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 20px 15px;
+}
+#nav{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav > p{
+    font-size: 24px;
+    font-weight: 700;
+}
+#nav ul{
+    display: flex;
+    gap:40px;
+    font-size: 18px;
+    color: var(--text);
+    list-style: none;
+    font-weight: 500;
+}
+ul li{
+    cursor: pointer;
+}
+ul li:last-child{
+    font-size: 16px;
+}
+#btn{
+    display: flex;
+    gap:30px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+#btn a{
+    color: var(--text);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn a:nth-child(2){
+    color:white;
+    background-color: var(--btn);
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+#hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+.hero-upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero-upper h1{
+    font-size: 72px;
+    font-weight: 700;
+}
+.hero-upper p{
+    font-size: 22px;
+    font-weight: 500;
+    width: 582px;
+    margin-top: 20px;
+    color: var(--text);
+}
+.hero-lower{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+}
+.hero-lower a{
+    font-weight: 500;
+}
+.hero-lower a:nth-child(1){
+    background-color:var(--btn);
+    width: 300px;
+    height:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: 20px;
+    color: white;
+}
+.hero-lower a:nth-child(2){
+    font-size: 18px;
+    color: var(--btn);
+}
